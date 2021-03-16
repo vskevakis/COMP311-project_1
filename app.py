@@ -182,8 +182,9 @@ def parse_days(sample):
 
 def Dijkstra(roads, nodes, source, destination, pred_traffic):
     '''
-    Implementing a dijkstra algorith to find the shortest
-    path
+    Implementing a dijkstra algorith to find the shortest path. 
+    \n Returns path[list], total_weight, visited_nodes
+
     ''' 
     visited_nodes = 0 
     priority_queue = []
@@ -238,20 +239,36 @@ def main():
     '''
     This is gonna be our main
     '''
-    starting_time = datetime.now()
-    samples = "samples/sampleGraph3.txt"
+    samples = "samples/sampleGraph2.txt"
+    results = "results.txt"
+
+    # Deleting previous results file content
+    f = open(results, "w")
+    f.close()
+
 
     [source, dest] = parse_sourcedest(samples)
     [roads, nodes] = parse_roads(samples)
     [pred_days, actual_days] = parse_days(samples)
 
-    # print(weight_func(roads, "10Node0e", "10Node9e", pred_days[0]))
+    # Running Dijkstra and writing to results file
     for i in range(0, len(pred_days)):
-        print(Dijkstra(roads, nodes, source, dest, pred_days[i]))
-        print(Dijkstra(roads, nodes, source, dest, actual_days[i]))
-
-    ending_time = datetime.now()
-    print("Total time: " + str(ending_time-starting_time))
+        starting_time = datetime.now()
+        # print(Dijkstra(roads, nodes, source, dest, pred_days[i]))
+        # print(Dijkstra(roads, nodes, source, dest, actual_days[i]))
+        dijkstra_pred_path, dijkstra_pred_weight, dijkstra_pred_vnodes = Dijkstra(roads, nodes, source, dest, pred_days[i])
+        dijkstra_actual_path, dijkstra_actual_weight, dijkstra_actual_vnodes = Dijkstra(roads, nodes, source, dest, actual_days[i])
+        execution_time = datetime.now() - starting_time
+        path = str(' -> '.join([str(road) for road in dijkstra_pred_path]))
+        f = open(results, "a")
+        f.writelines('\nDay '+ str(i+1) +
+        '\nDijkstra: ' + 
+        '\n Visited Nodes number: ' + str(dijkstra_pred_vnodes) + 
+        '\n Execution Time(ms): ' + str(execution_time.microseconds) + 
+        '\n Path: ' + path + 
+        '\n Predicted Cost: ' + str(round(dijkstra_pred_weight, 2)) + 
+        '\n Real Cost: ' + str(round(dijkstra_actual_weight, 2)))
+        f.close()
 
 main()
 

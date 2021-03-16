@@ -1,0 +1,561 @@
+
+Day 1
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6282
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 302.6
+ Real Cost: 303.4
+Day 2
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6235
+ Path: Road5e -> Road166e -> Road168e -> Road85e -> Road79e
+ Predicted Cost: 324.9
+ Real Cost: 332.2
+Day 3
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6400
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 335.3
+ Real Cost: 327.7
+Day 4
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6384
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 339.5
+ Real Cost: 335.4
+Day 5
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 7547
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 331.5
+ Real Cost: 339.2
+Day 6
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 7055
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 320.3
+ Real Cost: 320.1
+Day 7
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6320
+ Path: Road5e -> Road166e -> Road168e -> Road85e -> Road79e
+ Predicted Cost: 317.4
+ Real Cost: 314.0
+Day 8
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6434
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 323.2
+ Real Cost: 315.7
+Day 9
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6272
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 313.6
+ Real Cost: 311.8
+Day 10
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6312
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 320.4
+ Real Cost: 329.3
+Day 11
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6261
+ Path: Road5e -> Road166e -> Road168e -> Road85e -> Road79e
+ Predicted Cost: 335.4
+ Real Cost: 339.8
+Day 12
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6423
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 336.8
+ Real Cost: 330.3
+Day 13
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6589
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 301.5
+ Real Cost: 302.8
+Day 14
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6667
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 322.5
+ Real Cost: 339.8
+Day 15
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6348
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 336.0
+ Real Cost: 333.1
+Day 16
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6407
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 344.7
+ Real Cost: 347.5
+Day 17
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6921
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 315.3
+ Real Cost: 312.3
+Day 18
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6656
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 326.2
+ Real Cost: 314.6
+Day 19
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6481
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 306.2
+ Real Cost: 308.2
+Day 20
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6655
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 336.8
+ Real Cost: 341.0
+Day 21
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6898
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 325.4
+ Real Cost: 322.4
+Day 22
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6415
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 316.6
+ Real Cost: 318.0
+Day 23
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6540
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 301.5
+ Real Cost: 302.4
+Day 24
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6306
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 301.0
+ Real Cost: 313.7
+Day 25
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6560
+ Path: Road5e -> Road166e -> Road168e -> Road85e -> Road79e
+ Predicted Cost: 305.1
+ Real Cost: 320.5
+Day 26
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6335
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 327.3
+ Real Cost: 334.0
+Day 27
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6378
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 345.0
+ Real Cost: 348.9
+Day 28
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6470
+ Path: Road5e -> Road166e -> Road168e -> Road85e -> Road79e
+ Predicted Cost: 326.3
+ Real Cost: 331.4
+Day 29
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6420
+ Path: Road5e -> Road166e -> Road168e -> Road85e -> Road79e
+ Predicted Cost: 335.6
+ Real Cost: 336.3
+Day 30
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6941
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 335.9
+ Real Cost: 324.2
+Day 31
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6447
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 322.2
+ Real Cost: 329.3
+Day 32
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6388
+ Path: Road5e -> Road166e -> Road168e -> Road85e -> Road79e
+ Predicted Cost: 318.0
+ Real Cost: 324.2
+Day 33
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6299
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 342.2
+ Real Cost: 343.2
+Day 34
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6403
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 320.1
+ Real Cost: 322.1
+Day 35
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6661
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 318.5
+ Real Cost: 318.5
+Day 36
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 8517
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 346.2
+ Real Cost: 338.2
+Day 37
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6826
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 328.1
+ Real Cost: 326.7
+Day 38
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6405
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 360.2
+ Real Cost: 326.0
+Day 39
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6259
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 330.5
+ Real Cost: 336.5
+Day 40
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6314
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 322.5
+ Real Cost: 319.6
+Day 41
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6274
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 323.9
+ Real Cost: 326.0
+Day 42
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6243
+ Path: Road5e -> Road166e -> Road168e -> Road85e -> Road79e
+ Predicted Cost: 312.4
+ Real Cost: 328.3
+Day 43
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 7047
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 312.1
+ Real Cost: 312.2
+Day 44
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 8419
+ Path: Road5e -> Road166e -> Road168e -> Road85e -> Road79e
+ Predicted Cost: 315.0
+ Real Cost: 338.6
+Day 45
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6639
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 328.4
+ Real Cost: 341.0
+Day 46
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6588
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 325.9
+ Real Cost: 333.6
+Day 47
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6617
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 302.5
+ Real Cost: 302.2
+Day 48
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6686
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 315.2
+ Real Cost: 312.9
+Day 49
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6685
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 336.8
+ Real Cost: 332.9
+Day 50
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6634
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 317.9
+ Real Cost: 323.5
+Day 51
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6698
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 320.4
+ Real Cost: 325.8
+Day 52
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6792
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 345.3
+ Real Cost: 332.2
+Day 53
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 7200
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 331.2
+ Real Cost: 324.0
+Day 54
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6684
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 340.0
+ Real Cost: 333.1
+Day 55
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 7233
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 330.3
+ Real Cost: 323.8
+Day 56
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6526
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 346.2
+ Real Cost: 343.4
+Day 57
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6583
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 325.2
+ Real Cost: 318.2
+Day 58
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6730
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 326.1
+ Real Cost: 312.7
+Day 59
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6655
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 301.5
+ Real Cost: 304.4
+Day 60
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6621
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 314.6
+ Real Cost: 313.9
+Day 61
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 7072
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 327.2
+ Real Cost: 320.7
+Day 62
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6820
+ Path: Road5e -> Road166e -> Road168e -> Road85e -> Road79e
+ Predicted Cost: 338.7
+ Real Cost: 340.8
+Day 63
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6575
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 344.1
+ Real Cost: 339.5
+Day 64
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6613
+ Path: Road5e -> Road166e -> Road168e -> Road85e -> Road79e
+ Predicted Cost: 318.2
+ Real Cost: 326.9
+Day 65
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6701
+ Path: Road5e -> Road166e -> Road168e -> Road85e -> Road79e
+ Predicted Cost: 339.6
+ Real Cost: 329.0
+Day 66
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6654
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 339.9
+ Real Cost: 325.6
+Day 67
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6844
+ Path: Road5e -> Road166e -> Road168e -> Road85e -> Road79e
+ Predicted Cost: 316.5
+ Real Cost: 320.3
+Day 68
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6666
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 310.5
+ Real Cost: 315.1
+Day 69
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6983
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 313.1
+ Real Cost: 301.6
+Day 70
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6837
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 304.7
+ Real Cost: 307.7
+Day 71
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6634
+ Path: Road5e -> Road166e -> Road168e -> Road85e -> Road79e
+ Predicted Cost: 346.2
+ Real Cost: 334.9
+Day 72
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6647
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 326.4
+ Real Cost: 312.9
+Day 73
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6697
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 321.4
+ Real Cost: 319.5
+Day 74
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6755
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 345.7
+ Real Cost: 334.3
+Day 75
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6727
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 321.1
+ Real Cost: 331.8
+Day 76
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6677
+ Path: Road5e -> Road166e -> Road168e -> Road85e -> Road79e
+ Predicted Cost: 322.3
+ Real Cost: 327.1
+Day 77
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 7021
+ Path: Road5e -> Road166e -> Road168e -> Road85e -> Road79e
+ Predicted Cost: 309.2
+ Real Cost: 338.8
+Day 78
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6758
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 331.7
+ Real Cost: 310.7
+Day 79
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6605
+ Path: Road5e -> Road166e -> Road168e -> Road85e -> Road79e
+ Predicted Cost: 328.6
+ Real Cost: 322.6
+Day 80
+Dijkstra: 
+ Visited Nodes number: 28
+ Execution Time(ms): 6677
+ Path: Road5e -> Road166e -> Road169e -> Road82e
+ Predicted Cost: 328.3
+ Real Cost: 322.3
