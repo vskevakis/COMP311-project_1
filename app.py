@@ -15,18 +15,19 @@ class Road:
     
 
 class Node:
-    def __init__(self, name, neighbours, weight, previous, road_name):
+    def __init__(self, name, neighbours):
         self.name = name
         self.neighbours = neighbours
-        self.weight = weight 
-        self.previous = previous
-        self.road_name = road_name
+        self.weight = None 
+        self.previous = None
+        self.road_name = None
+        self.heuristic = 0
     
     def add_neighbour(self, node):
         neigh_list = self.neighbours
         if node not in self.neighbours:
             neigh_list.append(node)
-            self.neightbours = neigh_list
+            self.neighbours = neigh_list
         
     def set_weight(self, number):
         self.weight = number
@@ -36,6 +37,9 @@ class Node:
 
     def set_roadname(self, road_name):
         self.road_name = road_name
+
+    def set_heuristic(self, heuristic):
+        self.heuristic = heuristic
 
 
 def contains(list, attribute):
@@ -94,7 +98,7 @@ def parse_roads(sample):
         weight = attrs[3]
         roads.append(Road(road_name, node_1, node_2, weight))
         if not contains(nodes, node_1):
-            new_node_1 = Node(node_1, [], None, None, None)
+            new_node_1 = Node(node_1, [])
             new_node_1.add_neighbour(node_2)
             nodes.append(new_node_1)
         else:
@@ -103,7 +107,7 @@ def parse_roads(sample):
             node.add_neighbour(node_2)
             nodes.append(node)
         if not contains(nodes, node_2):
-            new_node_2 = Node(node_2, [], None, None, None)
+            new_node_2 = Node(node_2, [])
             new_node_2.add_neighbour(node_1)
             nodes.append(new_node_2)
         else:
@@ -182,9 +186,8 @@ def parse_days(sample):
 
 def Dijkstra(roads, nodes, source, destination, pred_traffic):
     '''
-    Implementing a dijkstra algorith to find the shortest path. 
+    Implementing a dijkstra algorithm to find the shortest path. 
     \n Returns path[list], total_weight, visited_nodes
-
     ''' 
     visited_nodes = 0 
     priority_queue = []
@@ -212,7 +215,7 @@ def Dijkstra(roads, nodes, source, destination, pred_traffic):
             path = []
             total_weight = u_node.weight
             while u_node.previous:
-                path = [u_node.road_name] + path
+                path = [u_node.road_name + '(' + str(round(u_node.weight, 2)) + ')' ] + path
                 u_node = u_node.previous
             return path, total_weight, visited_nodes
 
@@ -230,9 +233,61 @@ def Dijkstra(roads, nodes, source, destination, pred_traffic):
                 neighbour_node.set_roadname(road_name)
         
 
+def IDA_Star(roads, nodes, source, destination, pred_traffic):
+    '''
+    Implementing a A* algorithm to find the shortest path. 
+    \n Returns path[list], total_weight, visited_nodes
+    ''' 
+    for node in nodes:
+                if node.name == source:
+                    source_node = node
+                    break
+    bound = source_node.heuristic
+    path = [source_node]
+    visited = []
+    while True:
+        t = IDA_Search(path, 0, bound, destination, roads, pred_traffic, nodes, visited)
+        if t == float("inf"):
+            print("Here")
+            return -1
+        elif t < 0:
+            print("Found")
+            return -t
+        else:
+            print("Bound " + str(t))
+            bound = t
 
 
-
+def IDA_Search(path, distance, bound, destination, roads, pred_traffic, nodes, visited):
+    '''
+    '''
+    current_node = path[-1]
+    print("Node: " + current_node.name)
+    visited.append(current_node.name)
+    f = distance + current_node.heuristic #heuristic.index(current_node.name)
+    if f > bound:
+        return f
+    if current_node.name == destination:
+        return -distance
+    min = float("inf")     
+    for neighbour in current_node.neighbours:
+        if neighbour not in visited:
+            if neighbour not in path:
+                for node in nodes:
+                    if node.name == neighbour:
+                        neighbour_node = node
+                        break
+                path.append(neighbour_node) 
+                [road_name, weight] = weight_func(roads, current_node.name, neighbour_node.name, pred_traffic)
+                t = IDA_Search(path, distance + weight, bound, destination, roads, pred_traffic, nodes, visited)
+                print("t is: " + str(t) +  "min is: " + str(min))
+                if t < 0:
+                    return t
+                elif t < min:
+                    min = t
+                path.pop()
+                # path.remove(path[-1])
+    return min
 
 
 def main():
@@ -251,6 +306,12 @@ def main():
     [roads, nodes] = parse_roads(samples)
     [pred_days, actual_days] = parse_days(samples)
 
+    # heuristic = []
+    # for node in nodes:
+    #     heuristic.append([node.name, 0])
+
+    print(IDA_Star(roads, nodes, source, dest, pred_days[1]))
+    '''
     # Running Dijkstra and writing to results file
     for i in range(0, len(pred_days)):
         starting_time = datetime.now()
@@ -261,14 +322,16 @@ def main():
         execution_time = datetime.now() - starting_time
         path = str(' -> '.join([str(road) for road in dijkstra_pred_path]))
         f = open(results, "a")
-        f.writelines('\nDay '+ str(i+1) +
+        f.writelines('Day '+ str(i+1) +
         '\nDijkstra: ' + 
         '\n Visited Nodes number: ' + str(dijkstra_pred_vnodes) + 
         '\n Execution Time(ms): ' + str(execution_time.microseconds) + 
         '\n Path: ' + path + 
         '\n Predicted Cost: ' + str(round(dijkstra_pred_weight, 2)) + 
-        '\n Real Cost: ' + str(round(dijkstra_actual_weight, 2)))
+        '\n Real Cost: ' + str(round(dijkstra_actual_weight, 2)) +
+        '\n')
         f.close()
+    '''
 
 main()
 
