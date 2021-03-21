@@ -269,7 +269,7 @@ def IDA_Search(last_weight, distance, threshold, current_node, destination, node
         print(node.name, end=" ")
     print("\n")    
     
-    if current_node.name == destination:
+    if current_node.name == destination and distance < threshold:
         # We have found the goal node we we're searching for
         print(current_node.name, end=" | ")
         return -distance
@@ -386,7 +386,7 @@ def main():
     #     heuristic.append([node.name, 0])
 
     # print(IDA_Star(source, dest, nodes, roads, pred_days[0]))
-    print(IDA_Star(source, dest, nodes, roads, pred_days[2]))
+    print(IDA_Star(source, dest, nodes, roads, pred_days[0]))
     
     # Running Dijkstra and writing to results file
     for i in range(0, len(pred_days)):

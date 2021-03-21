@@ -1,560 +1,560 @@
 Day 1
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 4954
+ Execution Time(ms): 3728
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(111.6) -> Road161e(141.6)
  Predicted Cost: 141.6
  Real Cost: 167.0
 Day 2
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 9381
+ Execution Time(ms): 3191
  Path: Road24e(13.2) -> Road156e(47.4) -> Road162e(70.4) -> Road63e(123.2) -> Road161e(153.2)
  Predicted Cost: 153.2
  Real Cost: 140.0
 Day 3
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 5262
+ Execution Time(ms): 2953
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(124.8) -> Road161e(151.8)
  Predicted Cost: 151.8
  Real Cost: 155.6
 Day 4
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 4161
+ Execution Time(ms): 2925
  Path: Road24e(13.2) -> Road156e(58.8) -> Road162e(81.8) -> Road63e(134.6) -> Road161e(164.6)
  Predicted Cost: 164.6
  Real Cost: 155.1
 Day 5
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 4082
+ Execution Time(ms): 3903
  Path: Road24e(13.2) -> Road156e(51.2) -> Road162e(71.9) -> Road63e(111.5) -> Road161e(138.5)
  Predicted Cost: 138.5
  Real Cost: 151.7
 Day 6
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2795
+ Execution Time(ms): 3451
  Path: Road24e(11) -> Road156e(56.6) -> Road162e(79.6) -> Road63e(119.2) -> Road161e(155.2)
  Predicted Cost: 155.2
  Real Cost: 164.2
 Day 7
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3157
+ Execution Time(ms): 3192
  Path: Road24e(11) -> Road156e(45.2) -> Road162e(65.9) -> Road63e(109.9) -> Road161e(136.9)
  Predicted Cost: 136.9
  Real Cost: 136.9
 Day 8
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3869
+ Execution Time(ms): 3817
  Path: Road24e(11) -> Road156e(45.2) -> Road162e(68.2) -> Road63e(112.2) -> Road161e(139.2)
  Predicted Cost: 139.2
  Real Cost: 145.7
 Day 9
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 4265
+ Execution Time(ms): 3887
  Path: Road24e(11) -> Road156e(56.6) -> Road162e(77.3) -> Road63e(130.1) -> Road161e(157.1)
  Predicted Cost: 157.1
  Real Cost: 148.3
 Day 10
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 4109
+ Execution Time(ms): 3267
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(111.6) -> Road161e(138.6)
  Predicted Cost: 138.6
  Real Cost: 143.0
 Day 11
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 4036
+ Execution Time(ms): 3016
  Path: Road24e(13.2) -> Road156e(51.2) -> Road162e(74.2) -> Road63e(118.2) -> Road161e(154.2)
  Predicted Cost: 154.2
  Real Cost: 149.8
 Day 12
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 4352
+ Execution Time(ms): 2923
  Path: Road24e(13.2) -> Road156e(58.8) -> Road162e(81.8) -> Road63e(125.8) -> Road161e(161.8)
  Predicted Cost: 161.8
  Real Cost: 159.2
 Day 13
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2782
+ Execution Time(ms): 2993
  Path: Road24e(13.2) -> Road156e(47.4) -> Road162e(70.4) -> Road63e(114.4) -> Road161e(150.4)
  Predicted Cost: 150.4
  Real Cost: 154.2
 Day 14
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2952
+ Execution Time(ms): 2912
  Path: Road24e(11) -> Road156e(45.2) -> Road162e(65.9) -> Road63e(118.7) -> Road161e(145.7)
  Predicted Cost: 145.7
  Real Cost: 141.5
 Day 15
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2872
+ Execution Time(ms): 2945
  Path: Road24e(11) -> Road156e(45.2) -> Road162e(68.2) -> Road63e(112.2) -> Road161e(142.2)
  Predicted Cost: 142.2
  Real Cost: 162.4
 Day 16
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3920
+ Execution Time(ms): 3089
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(124.8) -> Road161e(154.8)
  Predicted Cost: 154.8
  Real Cost: 153.6
 Day 17
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 4018
+ Execution Time(ms): 3768
  Path: Road24e(11) -> Road156e(49) -> Road162e(76.6) -> Road63e(120.6) -> Road161e(147.6)
  Predicted Cost: 147.6
  Real Cost: 156.4
 Day 18
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 4137
+ Execution Time(ms): 3398
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(116) -> Road161e(146)
  Predicted Cost: 146
  Real Cost: 162.4
 Day 19
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 4114
+ Execution Time(ms): 3094
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(111.6) -> Road161e(141.6)
  Predicted Cost: 141.6
  Real Cost: 153.6
 Day 20
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 4139
+ Execution Time(ms): 2980
  Path: Road24e(9.9) -> Road156e(44.1) -> Road162e(64.8) -> Road63e(104.4) -> Road161e(134.4)
  Predicted Cost: 134.4
  Real Cost: 159.0
 Day 21
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 4076
+ Execution Time(ms): 2775
  Path: Road24e(11) -> Road156e(56.6) -> Road162e(79.6) -> Road63e(119.2) -> Road161e(155.2)
  Predicted Cost: 155.2
  Real Cost: 155.2
 Day 22
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2733
+ Execution Time(ms): 2824
  Path: Road24e(11) -> Road156e(45.2) -> Road162e(68.2) -> Road63e(107.8) -> Road161e(137.8)
  Predicted Cost: 137.8
  Real Cost: 155.8
 Day 23
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2815
+ Execution Time(ms): 2778
  Path: Road24e(11) -> Road156e(56.6) -> Road162e(79.6) -> Road63e(119.2) -> Road161e(149.2)
  Predicted Cost: 149.2
  Real Cost: 162.4
 Day 24
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3875
+ Execution Time(ms): 2819
  Path: Road24e(11) -> Road156e(45.2) -> Road162e(68.2) -> Road63e(121.0) -> Road161e(151.0)
  Predicted Cost: 151.0
  Real Cost: 158.5
 Day 25
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3981
+ Execution Time(ms): 2949
  Path: Road24e(11) -> Road156e(45.2) -> Road162e(68.2) -> Road63e(112.2) -> Road161e(142.2)
  Predicted Cost: 142.2
  Real Cost: 143.7
 Day 26
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 4250
+ Execution Time(ms): 2941
  Path: Road24e(11) -> Road156e(45.2) -> Road162e(72.8) -> Road63e(116.8) -> Road161e(152.8)
  Predicted Cost: 152.8
  Real Cost: 132.5
 Day 27
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 4146
+ Execution Time(ms): 3916
  Path: Road24e(9.9) -> Road156e(55.5) -> Road162e(78.5) -> Road63e(118.1) -> Road161e(145.1)
  Predicted Cost: 145.1
  Real Cost: 154.0
 Day 28
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3305
+ Execution Time(ms): 3643
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(124.8) -> Road161e(151.8)
  Predicted Cost: 151.8
  Real Cost: 143.0
 Day 29
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3315
+ Execution Time(ms): 3150
  Path: Road24e(11) -> Road156e(45.2) -> Road162e(68.2) -> Road63e(112.2) -> Road161e(148.2)
  Predicted Cost: 148.2
  Real Cost: 154.7
 Day 30
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2861
+ Execution Time(ms): 2898
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(124.8) -> Road161e(151.8)
  Predicted Cost: 151.8
  Real Cost: 147.6
 Day 31
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2962
+ Execution Time(ms): 2750
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(124.8) -> Road161e(160.8)
  Predicted Cost: 160.8
  Real Cost: 156.6
 Day 32
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 5949
+ Execution Time(ms): 2815
  Path: Road24e(11) -> Road156e(49) -> Road162e(76.6) -> Road63e(129.4) -> Road161e(165.4)
  Predicted Cost: 165.4
  Real Cost: 156.6
 Day 33
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 4265
+ Execution Time(ms): 3050
  Path: Road24e(11) -> Road156e(56.6) -> Road162e(77.3) -> Road63e(121.3) -> Road161e(157.3)
  Predicted Cost: 157.3
  Real Cost: 173.0
 Day 34
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2779
+ Execution Time(ms): 2848
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(116) -> Road161e(143.0)
  Predicted Cost: 143.0
  Real Cost: 164.0
 Day 35
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2904
+ Execution Time(ms): 3354
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(124.8) -> Road161e(154.8)
  Predicted Cost: 154.8
  Real Cost: 142.4
 Day 36
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2944
+ Execution Time(ms): 3160
  Path: Road24e(11) -> Road156e(56.6) -> Road162e(79.6) -> Road63e(119.2) -> Road161e(155.2)
  Predicted Cost: 155.2
  Real Cost: 154.7
 Day 37
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2796
+ Execution Time(ms): 3009
  Path: Road24e(11) -> Road156e(45.2) -> Road162e(68.2) -> Road63e(121.0) -> Road161e(148.0)
  Predicted Cost: 148.0
  Real Cost: 148.0
 Day 38
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2966
+ Execution Time(ms): 3439
  Path: Road24e(9.9) -> Road156e(44.1) -> Road162e(71.7) -> Road63e(115.7) -> Road161e(151.7)
  Predicted Cost: 151.7
  Real Cost: 147.3
 Day 39
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2891
+ Execution Time(ms): 3230
  Path: Road24e(11) -> Road156e(49) -> Road162e(69.7) -> Road63e(122.5) -> Road161e(152.5)
  Predicted Cost: 152.5
  Real Cost: 146
 Day 40
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3713
+ Execution Time(ms): 2996
  Path: Road24e(11) -> Road156e(56.6) -> Road162e(79.6) -> Road63e(119.2) -> Road161e(149.2)
  Predicted Cost: 149.2
  Real Cost: 162.4
 Day 41
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3180
+ Execution Time(ms): 3143
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(111.6) -> Road161e(138.6)
  Predicted Cost: 138.6
  Real Cost: 151.8
 Day 42
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3442
+ Execution Time(ms): 2888
  Path: Road24e(13.2) -> Road156e(58.8) -> Road162e(81.8) -> Road63e(125.8) -> Road161e(161.8)
  Predicted Cost: 161.8
  Real Cost: 168.3
 Day 43
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3833
+ Execution Time(ms): 2770
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(116) -> Road161e(143.0)
  Predicted Cost: 143.0
  Real Cost: 151.8
 Day 44
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2799
+ Execution Time(ms): 3014
  Path: Road24e(11) -> Road156e(56.6) -> Road162e(84.2) -> Road63e(123.8) -> Road161e(150.8)
  Predicted Cost: 150.8
  Real Cost: 151.8
 Day 45
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2861
+ Execution Time(ms): 2914
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(124.8) -> Road161e(154.8)
  Predicted Cost: 154.8
  Real Cost: 146
 Day 46
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2755
+ Execution Time(ms): 3505
  Path: Road24e(11) -> Road156e(45.2) -> Road162e(72.8) -> Road63e(112.4) -> Road161e(148.4)
  Predicted Cost: 148.4
  Real Cost: 160.8
 Day 47
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2726
+ Execution Time(ms): 3400
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(111.6) -> Road161e(141.6)
  Predicted Cost: 141.6
  Real Cost: 153.6
 Day 48
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2686
+ Execution Time(ms): 4220
  Path: Road24e(9.9) -> Road156e(47.9) -> Road162e(70.9) -> Road63e(110.5) -> Road161e(140.5)
  Predicted Cost: 140.5
  Real Cost: 140.5
 Day 49
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2878
+ Execution Time(ms): 3975
  Path: Road24e(11) -> Road156e(56.6) -> Road162e(79.6) -> Road63e(132.4) -> Road161e(159.4)
  Predicted Cost: 159.4
  Real Cost: 139.2
 Day 50
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2794
+ Execution Time(ms): 3459
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(116) -> Road161e(143.0)
  Predicted Cost: 143.0
  Real Cost: 150.8
 Day 51
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2700
+ Execution Time(ms): 2826
  Path: Road24e(11) -> Road156e(56.6) -> Road162e(79.6) -> Road63e(123.6) -> Road161e(159.6)
  Predicted Cost: 159.6
  Real Cost: 173.0
 Day 52
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2773
+ Execution Time(ms): 2848
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(116) -> Road161e(143.0)
  Predicted Cost: 143.0
  Real Cost: 136.9
 Day 53
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2788
+ Execution Time(ms): 2926
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(111.6) -> Road161e(138.6)
  Predicted Cost: 138.6
  Real Cost: 139.2
 Day 54
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2832
+ Execution Time(ms): 2827
  Path: Road24e(9.9) -> Road156e(44.1) -> Road162e(67.1) -> Road63e(106.7) -> Road161e(142.7)
  Predicted Cost: 142.7
  Real Cost: 144.8
 Day 55
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2708
+ Execution Time(ms): 3897
  Path: Road24e(9.9) -> Road156e(44.1) -> Road162e(64.8) -> Road63e(108.8) -> Road161e(138.8)
  Predicted Cost: 138.8
  Real Cost: 136.7
 Day 56
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2894
+ Execution Time(ms): 2735
  Path: Road24e(11) -> Road156e(45.2) -> Road162e(65.9) -> Road63e(105.5) -> Road161e(132.5)
  Predicted Cost: 132.5
  Real Cost: 136.9
 Day 57
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3221
+ Execution Time(ms): 3411
  Path: Road24e(11) -> Road156e(56.6) -> Road162e(79.6) -> Road63e(123.6) -> Road161e(153.6)
  Predicted Cost: 153.6
  Real Cost: 149.2
 Day 58
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2905
+ Execution Time(ms): 3256
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(124.8) -> Road161e(154.8)
  Predicted Cost: 154.8
  Real Cost: 159.4
 Day 59
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2925
+ Execution Time(ms): 3708
  Path: Road24e(11) -> Road156e(45.2) -> Road162e(68.2) -> Road63e(121.0) -> Road161e(151.0)
  Predicted Cost: 151.0
  Real Cost: 142.2
 Day 60
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3388
+ Execution Time(ms): 3885
  Path: Road24e(11) -> Road156e(45.2) -> Road162e(72.8) -> Road63e(112.4) -> Road161e(148.4)
  Predicted Cost: 148.4
  Real Cost: 150.6
 Day 61
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3783
+ Execution Time(ms): 3636
  Path: Road24e(11) -> Road156e(45.2) -> Road162e(65.9) -> Road63e(109.9) -> Road161e(145.9)
  Predicted Cost: 145.9
  Real Cost: 145.3
 Day 62
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3069
+ Execution Time(ms): 3516
  Path: Road24e(11) -> Road156e(56.6) -> Road162e(79.6) -> Road63e(123.6) -> Road161e(150.6)
  Predicted Cost: 150.6
  Real Cost: 146.2
 Day 63
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3161
+ Execution Time(ms): 3622
  Path: Road24e(13.2) -> Road156e(51.2) -> Road162e(74.2) -> Road63e(113.8) -> Road161e(143.8)
  Predicted Cost: 143.8
  Real Cost: 149.0
 Day 64
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3271
+ Execution Time(ms): 3085
  Path: Road24e(9.9) -> Road156e(47.9) -> Road162e(70.9) -> Road63e(110.5) -> Road161e(140.5)
  Predicted Cost: 140.5
  Real Cost: 141.1
 Day 65
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2780
+ Execution Time(ms): 2954
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(124.8) -> Road161e(154.8)
  Predicted Cost: 154.8
  Real Cost: 139.3
 Day 66
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2828
+ Execution Time(ms): 3090
  Path: Road24e(11) -> Road156e(45.2) -> Road162e(68.2) -> Road63e(112.2) -> Road161e(142.2)
  Predicted Cost: 142.2
  Real Cost: 146.8
 Day 67
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2679
+ Execution Time(ms): 3171
  Path: Road24e(9.9) -> Road156e(44.1) -> Road162e(67.1) -> Road63e(111.1) -> Road161e(147.1)
  Predicted Cost: 147.1
  Real Cost: 146.5
 Day 68
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2789
+ Execution Time(ms): 3601
  Path: Road24e(13.2) -> Road156e(58.8) -> Road162e(81.8) -> Road63e(125.8) -> Road161e(155.8)
  Predicted Cost: 155.8
  Real Cost: 164.6
 Day 69
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2873
+ Execution Time(ms): 2814
  Path: Road24e(11) -> Road156e(56.6) -> Road162e(79.6) -> Road63e(123.6) -> Road161e(159.6)
  Predicted Cost: 159.6
  Real Cost: 159.6
 Day 70
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3095
+ Execution Time(ms): 2803
  Path: Road24e(11) -> Road156e(56.6) -> Road162e(77.3) -> Road63e(130.1) -> Road161e(160.1)
  Predicted Cost: 160.1
  Real Cost: 142.4
 Day 71
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2759
+ Execution Time(ms): 2744
  Path: Road24e(13.2) -> Road156e(58.8) -> Road162e(81.8) -> Road63e(134.6) -> Road161e(164.6)
  Predicted Cost: 164.6
  Real Cost: 142.1
 Day 72
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2865
+ Execution Time(ms): 2830
  Path: Road24e(13.2) -> Road156e(51.2) -> Road162e(74.2) -> Road63e(118.2) -> Road161e(148.2)
  Predicted Cost: 148.2
  Real Cost: 164.6
 Day 73
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2799
+ Execution Time(ms): 2767
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(116) -> Road161e(146)
  Predicted Cost: 146
  Real Cost: 152.5
 Day 74
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2846
+ Execution Time(ms): 3061
  Path: Road24e(11) -> Road156e(56.6) -> Road162e(79.6) -> Road63e(123.6) -> Road161e(159.6)
  Predicted Cost: 159.6
  Real Cost: 159.8
 Day 75
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2724
+ Execution Time(ms): 3182
  Path: Road24e(13.2) -> Road156e(47.4) -> Road162e(70.4) -> Road63e(123.2) -> Road161e(159.2)
  Predicted Cost: 159.2
  Real Cost: 155.0
 Day 76
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2969
+ Execution Time(ms): 3319
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(116) -> Road161e(152.0)
  Predicted Cost: 152.0
  Real Cost: 152.2
 Day 77
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3076
+ Execution Time(ms): 3488
  Path: Road24e(11) -> Road156e(49) -> Road162e(72) -> Road63e(111.6) -> Road161e(147.6)
  Predicted Cost: 147.6
  Real Cost: 164.2
 Day 78
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2917
+ Execution Time(ms): 3150
  Path: Road24e(11) -> Road156e(49) -> Road162e(69.7) -> Road63e(122.5) -> Road161e(149.5)
  Predicted Cost: 149.5
  Real Cost: 143.2
 Day 79
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 2765
+ Execution Time(ms): 3111
  Path: Road24e(11) -> Road156e(56.6) -> Road162e(84.2) -> Road63e(128.2) -> Road161e(164.2)
  Predicted Cost: 164.2
  Real Cost: 153.6
 Day 80
 Dijkstra: 
  Visited Nodes number: 12
- Execution Time(ms): 3111
+ Execution Time(ms): 3444
  Path: Road24e(13.2) -> Road156e(47.4) -> Road162e(70.4) -> Road63e(123.2) -> Road161e(150.2)
  Predicted Cost: 150.2
  Real Cost: 146.0
