@@ -245,18 +245,20 @@ def Dijkstra(roads, nodes, source, destination, pred_traffic):
 def IDA_Star(source, destination, nodes, roads, pred_traffic):
     threshold = 0
     distance = 0
-    path = []
+    # path = []
     current_node = get_node(source, nodes)
     threshold = current_node.heuristic
     current_node.set_weight(0)
     current_node.set_roadname("None")
     visited = 0
     while True:
-        print("Starting at node: " + current_node.name + "   , new threshold : "+str(threshold))
-        [distance, visited, real_path] = IDA_Search2(visited, 0, threshold, current_node, destination, nodes, roads, pred_traffic, [current_node])
+        # print("Starting at node: " + current_node.name + "   , new threshold : "+str(threshold))
+        [distance, visited, real_path] = IDA_Search(visited, 0, threshold, current_node, destination, nodes, roads, pred_traffic, [current_node])
         if distance == float("inf"):
             return -1, None, None
         elif distance < 0:
+            del real_path[0]
+            del real_path[0]
             return -distance, visited, real_path
         else:
             threshold = distance + 0.05*distance
@@ -269,12 +271,12 @@ def IDA_Search(visited, distance, threshold, current_node, destination, nodes, r
     real_path=[]
     current_node = path[-1]
     f = current_node.weight + current_node.heuristic
-    print ("f : "+ str(f) +"  , threshold  : " + str(threshold)+ "  currnet node : "+current_node.name +"   visited : "+str(visited))
+    # print ("f : "+ str(f) +"  , threshold  : " + str(threshold)+ "  currnet node : "+current_node.name +"   visited : "+str(visited))
     if f > threshold : 
         return f, visited, real_path
     if destination == current_node.name :
         real_path=[current_node.road_name , current_node.weight]
-        print ("ffoooooooooooooooouuuuuuuuuuuuuuuuuuuuuuuunnnnnnnnnnnnnnnnnnnnnnnnnddddddddddddddddddd")
+        # print ("ffoooooooooooooooouuuuuuuuuuuuuuuuuuuuuuuunnnnnnnnnnnnnnnnnnnnnnnnnddddddddddddddddddd")
         return -distance, visited, real_path
     visited = visited +1
     min = float("inf")
@@ -288,15 +290,60 @@ def IDA_Search(visited, distance, threshold, current_node, destination, nodes, r
             [road_name, weight] = weight_func(roads, current_node.name, succ.name, pred_traffic)
             succ.set_roadname(road_name)
             succ.set_weight(current_node.weight + weight)
-            [distance , visited, real_path] = IDA_Search2(visited, succ.weight , threshold, succ, destination, nodes, roads, pred_traffic, path)
+            [distance , visited, real_path] = IDA_Search(visited, succ.weight , threshold, succ, destination, nodes, roads, pred_traffic, path)
             if distance < 0 :
-                print (current_node.name+"  current_node.weight"+str(current_node.weight))
+                # print (current_node.name+"  current_node.weight"+str(current_node.weight))
                 real_path = [current_node.road_name, current_node.weight] + real_path
                 return distance, visited, real_path
             elif distance < min:
                 min = distance
             path.pop()
     return min, visited, real_path
+
+
+def LRTA_Star(source, destination, nodes, roads, pred_traffic,low_traffic):
+    # threshold = 0
+    distance = 0
+    selected_road = []
+    current_node = get_node(source, nodes)
+    current_node.set_weight(0)
+    path = [current_node.name]
+    visited = 0
+    min_estimate = float("inf")
+    while current_node:
+        # print("current node : "+current_node.name)
+        visited = visited + 1
+        min_node=None
+        min_road=None
+        min_estimate = float("inf")
+        # time.sleep(0.5)
+        if current_node.name == destination:
+            print("destination node : "+current_node.name)
+            return distance,path,selected_road,visited
+        for neighbour in current_node.neighbours:
+            neighbour=get_node(neighbour, nodes)
+            if neighbour not in path:
+                [road_name, weight] = weight_func(roads, current_node.name, neighbour.name, low_traffic)
+                # print("road_name : "+road_name+"    , weight : "+str(weight))
+                # neighbour=get_node(neighbour, nodes)
+                estimate = current_node.weight + weight + neighbour.heuristic
+                [road_name, weight] = weight_func(roads, current_node.name, neighbour.name, pred_traffic)
+                if estimate < min_estimate:
+                    # print("road_namelo2 : "+road_name+"    , weightlow : "+str(weight))
+                    min_estimate = estimate
+                    min_node = neighbour
+                    min_road = road_name
+                    distance = current_node.weight + weight
+        if current_node.heuristic<min_estimate:
+            current_node.set_heuristic(min_estimate)
+        min_node.set_weight(distance)
+        current_node=min_node
+        try:
+            path.append(min_node.name)
+        except:
+            pass
+        selected_road.append(min_road)
+
 
 def main():
     '''
@@ -321,17 +368,33 @@ def main():
     # print(IDA_Star(source, dest, nodes, roads, pred_days[0]))
     # print(IDA_Star(source, dest, nodes, roads, pred_days[0]))
     # time.sleep(10)
+    nodes_with_h = []
+    for node in nodes:
+        # path, heuristic, visited = Dijkstra(roads, nodes, node.name, dest, low_traffic)
+        node.set_heuristic(0)
+        # print("New Heuristic: " + str(heuristic))
+        nodes_with_h.append(node)
+
 
     # Make a new nodes array WITH heuristics from running Dijkstra on every node
     # till our goal. - Will use it for one day for now
     low_traffic = []
     for day in pred_days[0]:
         low_traffic.append([day[0], "low"])
+    # for i in range(0, len(pred_days)):
+    #     distance,path,selected_road,visited = LRTA_Star(source, dest, nodes, roads, pred_days[i],low_traffic)
+    # for i in range(0, len(pred_days)):
+    #     distance,path,selected_road,visited = LRTA_Star(source, dest, nodes, roads, pred_days[i],low_traffic)
+    for i in range(0, len(pred_days)):
+        distance,path,selected_road,visited = LRTA_Star(source, dest, nodes, roads, pred_days[i],low_traffic)
+        print(path)
+        print(selected_road)
+        print("Visited: " + str(visited)+"  distance :"+str(distance))
 
     nodes_with_h = []
     for node in nodes:
         path, heuristic, visited = Dijkstra(roads, nodes, node.name, dest, low_traffic)
-        node.set_heuristic(heuristic*0)
+        node.set_heuristic(heuristic)
         # print("New Heuristic: " + str(heuristic))
         nodes_with_h.append(node)
     
