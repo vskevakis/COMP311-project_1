@@ -258,7 +258,6 @@ def IDA_Star(source, destination, nodes, roads, pred_traffic):
             return -1, None, None
         elif distance < 0:
             del real_path[0]
-            del real_path[0]
             return -distance, visited, real_path
         else:
             threshold = distance + 0.05*distance
@@ -275,8 +274,8 @@ def IDA_Search(visited, distance, threshold, current_node, destination, nodes, r
     if f > threshold : 
         return f, visited, real_path
     if destination == current_node.name :
-        real_path=[current_node.road_name , current_node.weight]
-        # print ("ffoooooooooooooooouuuuuuuuuuuuuuuuuuuuuuuunnnnnnnnnnnnnnnnnnnnnnnnnddddddddddddddddddd")
+        # real_path=[current_node.road_name , current_node.weight]
+        real_path = [current_node.road_name + '(' + str(round(current_node.weight, 2)) + ')' ]
         return -distance, visited, real_path
     visited = visited +1
     min = float("inf")
@@ -293,7 +292,8 @@ def IDA_Search(visited, distance, threshold, current_node, destination, nodes, r
             [distance , visited, real_path] = IDA_Search(visited, succ.weight , threshold, succ, destination, nodes, roads, pred_traffic, path)
             if distance < 0 :
                 # print (current_node.name+"  current_node.weight"+str(current_node.weight))
-                real_path = [current_node.road_name, current_node.weight] + real_path
+                # real_path = [current_node.road_name, current_node.weight] + real_path
+                real_path = [current_node.road_name + '(' + str(round(current_node.weight, 2)) + ')' ] + real_path
                 return distance, visited, real_path
             elif distance < min:
                 min = distance
@@ -318,7 +318,7 @@ def LRTA_Star(source, destination, nodes, roads, pred_traffic,low_traffic):
         min_estimate = float("inf")
         # time.sleep(0.5)
         if current_node.name == destination:
-            print("destination node : "+current_node.name)
+            # print("destination node : "+current_node.name)
             return distance,path,selected_road,visited
         for neighbour in current_node.neighbours:
             neighbour=get_node(neighbour, nodes)
@@ -342,7 +342,7 @@ def LRTA_Star(source, destination, nodes, roads, pred_traffic,low_traffic):
             path.append(min_node.name)
         except:
             pass
-        selected_road.append(min_road)
+        selected_road.append(min_road + '(' + str(round(distance,2)) + ')')
 
 
 def main():
@@ -350,11 +350,10 @@ def main():
     This is gonna be our main
     '''
     samples = "samples/sampleGraph1.txt"
-    results = "results.txt"
+    results = "a_results.txt"
+    results_b = "b_results.txt"
 
-    # Deleting previous results file content
-    f = open(results, "w")
-    f.close()
+
 
 
     [source, dest] = parse_sourcedest(samples)
@@ -368,12 +367,12 @@ def main():
     # print(IDA_Star(source, dest, nodes, roads, pred_days[0]))
     # print(IDA_Star(source, dest, nodes, roads, pred_days[0]))
     # time.sleep(10)
-    nodes_with_h = []
-    for node in nodes:
-        # path, heuristic, visited = Dijkstra(roads, nodes, node.name, dest, low_traffic)
-        node.set_heuristic(0)
-        # print("New Heuristic: " + str(heuristic))
-        nodes_with_h.append(node)
+    # nodes_with_h = []
+    # for node in nodes:
+    #     # path, heuristic, visited = Dijkstra(roads, nodes, node.name, dest, low_traffic)
+    #     node.set_heuristic(0)
+    #     # print("New Heuristic: " + str(heuristic))
+    #     nodes_with_h.append(node)
 
 
     # Make a new nodes array WITH heuristics from running Dijkstra on every node
@@ -385,43 +384,68 @@ def main():
     #     distance,path,selected_road,visited = LRTA_Star(source, dest, nodes, roads, pred_days[i],low_traffic)
     # for i in range(0, len(pred_days)):
     #     distance,path,selected_road,visited = LRTA_Star(source, dest, nodes, roads, pred_days[i],low_traffic)
-    for i in range(0, len(pred_days)):
-        distance,path,selected_road,visited = LRTA_Star(source, dest, nodes, roads, pred_days[i],low_traffic)
-        print(path)
-        print(selected_road)
-        print("Visited: " + str(visited)+"  distance :"+str(distance))
+    # for i in range(0, len(pred_days)):
+    #     distance, path,selected_road, visited = LRTA_Star(source, dest, nodes, roads, pred_days[i],low_traffic)
+    #     print(path)
+    #     print(selected_road)
+    #     print("Visited: " + str(visited)+"  distance :"+str(distance))
 
-    nodes_with_h = []
-    for node in nodes:
-        path, heuristic, visited = Dijkstra(roads, nodes, node.name, dest, low_traffic)
-        node.set_heuristic(heuristic)
-        # print("New Heuristic: " + str(heuristic))
-        nodes_with_h.append(node)
-    
-    [distance, visited, real_path] = IDA_Star(source, dest, nodes_with_h, roads, pred_days[0])
-    # path = str(' -> '.join([str(road) for road in real_path]))
-    print(real_path)
-    print("Visited: " + str(visited)+"  distance :"+str(distance))
+    # Deleting previous results file content
+    f = open(results_b, "w")
 
     # Running Dijkstra and writing to results file
     for i in range(0, len(pred_days)):
         starting_time = datetime.now()
-        # print(Dijkstra(roads, nodes, source, dest, pred_days[i]))
-        # print(Dijkstra(roads, nodes, source, dest, actual_days[i]))
+        lrta_pred_weight, useless_path, lrta_pred_path, lrta_pred_vnodes = LRTA_Star(source, dest, nodes, roads, pred_days[i],low_traffic)
+        execution_time_lrta = datetime.now() - starting_time
+        lrta_path = str(' -> '.join([str(road) for road in lrta_pred_path]))
+        f.writelines('Day '+ str(i+1) +
+        '\nLRTA*: ' + 
+        '\n Visited Nodes number: ' + str(lrta_pred_vnodes) + 
+        '\n Execution Time(ms): ' + str(execution_time_lrta.microseconds) + 
+        '\n Path: ' + lrta_path + 
+        '\n Cost: ' + str(round(lrta_pred_weight, 2)) + 
+        '\n')
+    f.close()
+
+    # Setting heuristics for IDA*
+    nodes_with_h = []
+    for node in nodes:
+        path, heuristic, visited = Dijkstra(roads, nodes, node.name, dest, low_traffic)
+        node.set_heuristic(heuristic)
+        nodes_with_h.append(node)
+
+    # Deleting previous results file content
+    # f = open(results, "w")
+    # f.close()
+    f = open(results, "w")
+    # Running Dijkstra and writing to results file
+    for i in range(0, len(pred_days)):
+        starting_time = datetime.now()
         dijkstra_pred_path, dijkstra_pred_weight, dijkstra_pred_vnodes = Dijkstra(roads, nodes, source, dest, pred_days[i])
+        execution_time_dij = datetime.now() - starting_time
         dijkstra_actual_path, dijkstra_actual_weight, dijkstra_actual_vnodes = Dijkstra(roads, nodes, source, dest, actual_days[i])
-        execution_time = datetime.now() - starting_time
-        path = str(' -> '.join([str(road) for road in dijkstra_pred_path]))
-        f = open(results, "a")
+        starting_time = datetime.now()
+        ida_pred_weight, ida_pred_vnodes, ida_pred_path = IDA_Star(source, dest, nodes_with_h, roads, pred_days[i])
+        execution_time_ida = datetime.now() - starting_time
+        ida_actual_weight, ida_actual_vnodes, ida_actual_path = IDA_Star(source, dest, nodes_with_h, roads, actual_days[i])
+        dij_path = str(' -> '.join([str(road) for road in dijkstra_pred_path]))
+        ida_path = str(' -> '.join([str(road) for road in ida_pred_path]))
         f.writelines('Day '+ str(i+1) +
         '\nDijkstra: ' + 
         '\n Visited Nodes number: ' + str(dijkstra_pred_vnodes) + 
-        '\n Execution Time(ms): ' + str(execution_time.microseconds) + 
-        '\n Path: ' + path + 
+        '\n Execution Time(ms): ' + str(execution_time_dij.microseconds) + 
+        '\n Path: ' + dij_path + 
         '\n Predicted Cost: ' + str(round(dijkstra_pred_weight, 2)) + 
         '\n Real Cost: ' + str(round(dijkstra_actual_weight, 2)) +
+        '\nIDA*: ' + 
+        '\n Visited Nodes number: ' + str(ida_pred_vnodes) + 
+        '\n Execution Time(ms): ' + str(execution_time_ida.microseconds) + 
+        '\n Path: ' + ida_path + 
+        '\n Predicted Cost: ' + str(round(ida_pred_weight, 2)) + 
+        '\n Real Cost: ' + str(round(ida_actual_weight, 2)) +
         '\n')
-        f.close()
+    f.close()
     
 
 main()
