@@ -1,12 +1,17 @@
-# import networkx as nx
+'''
+Course: COMP 311 - Artificial Inteligence
+Project: Path finding algorithms
+Team:
+    Konstantinos Revythis - 2012030136
+    Skevakis Vasileios - 2012030033
+
+MIT License
+'''
+
 import xml.etree.ElementTree as ET
 import re
 import time,sys
 from datetime import datetime
-# import matplotlib.pyplot as plt
-#Mit Licence
-#Konstantinos Revythis 2012030136
-#Skevakis Vasilhs 2012030033
 
 
 class Road:
@@ -339,7 +344,7 @@ def LRTA_Star(source, destination, nodes, roads, pred_traffic,low_traffic):
     #while we have a node to explore continue
     while current_node:
 
-        visited = visited + 1
+        visited += 1
         min_node=None
         min_road=None
         min_estimate = float("inf")
@@ -420,6 +425,8 @@ def main():
     f = open(results_b, "w")
 
     full_lrta_sec = 0
+    full_lrta_distance = 0
+    full_lrta_visited = 0
     # Running Lrta* and writing to results file
     for i in range(0, len(pred_days)):
         starting_time = datetime.now()
@@ -434,6 +441,8 @@ def main():
         '\n Cost: ' + str(round(lrta_pred_weight, 2)) + 
         '\n')
         full_lrta_sec += execution_time_lrta.total_seconds()
+        full_lrta_distance += lrta_pred_weight
+        full_lrta_visited += lrta_pred_vnodes
     f.close()
 
     # Setting heuristics for IDA*
@@ -449,6 +458,10 @@ def main():
     f = open(results, "w")
     full_dijkstra_sec = 0
     full_ida_sec = 0 
+    full_dijkstra_distance = 0
+    full_ida_distance = 0
+    full_dijkstra_visited = 0
+    full_ida_visited = 0
     # Running Dijkstra and IDA * and writing to results file
     for i in range(0, len(pred_days)):
         starting_time = datetime.now()
@@ -477,28 +490,42 @@ def main():
         '\n')
         full_dijkstra_sec += execution_time_dij.total_seconds()
         full_ida_sec += execution_time_ida.total_seconds()
+        full_dijkstra_distance += dijkstra_pred_weight
+        full_ida_distance += ida_pred_weight
+        full_dijkstra_visited += dijkstra_pred_vnodes
+        full_ida_visited += ida_pred_vnodes
     f.close()
 
-    print("Running Dijkstra for 80 days")
+
+    print("Running Dijkstra simulation for 80 days")
     for i in range(100):
         update_progress(i/99.0)
         time.sleep(full_dijkstra_sec/100)
     
     print('Total Time (sec): '+ str(full_dijkstra_sec))
+    print("Dijkstra distance average: " + str(full_dijkstra_distance/80))
+    print("Dijkstra visited average: " + str(full_dijkstra_visited/80))
 
-    print("Running IDA* for 80 days")
+    print("Running IDA* simulation for 80 days")
     for i in range(100):
         update_progress(i/99.0)
         time.sleep(full_ida_sec/100)
 
     print('Total Time (sec): ' + str(full_ida_sec))
+    print("IDA* distance average: " + str(full_ida_distance/80))
+    print("IDA* visited average: " + str(full_ida_visited/80))
 
-    print("Running LRTA* for 80 days")
+
+    print("Running LRTA* simulation for 80 days")
     for i in range(100):
         update_progress(i/99.0)
         time.sleep(full_lrta_sec/100)
 
     print('Total Time (sec): ' + str(full_lrta_sec))
+    print("LRTA* distance average: " + str(full_lrta_distance/80))
+    print("LRTA* visited average: " + str(full_lrta_visited/80))
+
+
 
 main()
 
