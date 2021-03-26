@@ -1,9 +1,12 @@
 # import networkx as nx
 import xml.etree.ElementTree as ET
 import re
-import time
+import time,sys
 from datetime import datetime
 # import matplotlib.pyplot as plt
+#Mit Licence
+#Konstantinos Revythis 2012030136
+#Skevakis Vasilhs 2012030033
 
 
 class Road:
@@ -123,6 +126,12 @@ def parse_roads(sample):
     return roads, nodes
 
 def weight_func(roads, node_1, node_2, pred_traffic):
+    '''
+    inputs: source, destination, nodes, roads, pred_traffic
+    returns: distance, visited, real_path
+    This function gets the predicted traffic and two nodes and returns the road 
+    and weight which provide the shortest distance between given nodes
+    '''
     lowest_weight = float("inf")
     lowest_road = None
     for road in roads:
@@ -222,7 +231,7 @@ def Dijkstra(roads, nodes, source, destination, pred_traffic):
 
         for node in priority_queue:
             for neighbour in node.neighbours:
-                # Finding neighbour node object
+                # Finding neighbour node object with the minimum distance
                 neighbour_node = get_node(neighbour, nodes)
                 if neighbour_node not in priority_queue:
 
@@ -233,9 +242,11 @@ def Dijkstra(roads, nodes, source, destination, pred_traffic):
                         min_node = neighbour_node
                         min_parent = node
                         min_road = road_name
-
+        #if we havent updated the min weight that mins that we dont have any other node to explore 
+        #and we havent found our destination
         if min_weight == float("inf"):
             return None, None, None
+        #adding the next node to be explored to the priority_queue and update its values(weight and the road chosen to get here)
         min_node.set_weight(min_weight)
         min_node.set_previous(min_parent)
         min_node.set_roadname(min_road)
@@ -243,66 +254,81 @@ def Dijkstra(roads, nodes, source, destination, pred_traffic):
         
         
 def IDA_Star(source, destination, nodes, roads, pred_traffic):
+    '''
+    inputs: source, destination, nodes, roads, pred_traffic
+    returns: distance, visited, real_path
+    '''
     threshold = 0
     distance = 0
-    # path = []
     current_node = get_node(source, nodes)
     threshold = current_node.heuristic
     current_node.set_weight(0)
     current_node.set_roadname("None")
     visited = 0
     while True:
-        # print("Starting at node: " + current_node.name + "   , new threshold : "+str(threshold))
+        #we start the search from the beginning with updated threshold
         [distance, visited, real_path] = IDA_Search(visited, 0, threshold, current_node, destination, nodes, roads, pred_traffic, [current_node])
         if distance == float("inf"):
+            #this means that the destination node wasnt found since we explored everything 
             return -1, None, None
         elif distance < 0:
             del real_path[0]
+            #our final result
             return -distance, visited, real_path
         else:
+            # we add a small value to threshold to decrease the iteration/exploration that it also increases the error rate a small percent 
+            # trade of accuracy with speed
             threshold = distance + 0.05*distance
 
 def IDA_Search(visited, distance, threshold, current_node, destination, nodes, roads, pred_traffic, path):
     '''
     inputs: distance, threshold, current_node, source, destination, nodes, roads, pred_traffic
-    returns: 
+    returns: distance, visited, real_path
     '''
     real_path=[]
     current_node = path[-1]
     f = current_node.weight + current_node.heuristic
-    # print ("f : "+ str(f) +"  , threshold  : " + str(threshold)+ "  currnet node : "+current_node.name +"   visited : "+str(visited))
+    #if the node weight plus its heuristic is bigger than the  threshold then we dont wont to exlpore this node yet
     if f > threshold : 
         return f, visited, real_path
+    #we found our destination and we  return and we set the distance to negative
     if destination == current_node.name :
-        # real_path=[current_node.road_name , current_node.weight]
         real_path = [current_node.road_name + '(' + str(round(current_node.weight, 2)) + ')' ]
         return -distance, visited, real_path
+    #since we skip the above if then we explore a new node and increase the visited nodes
     visited = visited +1
     min = float("inf")
-    # print (path)
+    #we check all the neighbours("children") nodes of the current node
     for succ in current_node.neighbours :
         succ=get_node(succ, nodes)
+        #if the are already in the path we ignore them since we have already expolred them and the have a smaller weight because
+        #ida works similar to dikjstra that search the shortest path first
         if succ not in path :
             path.append(succ)
-            # for i in path:
-            #     print (i.name)
+            #add it to path and get the weight between the current node an the child
             [road_name, weight] = weight_func(roads, current_node.name, succ.name, pred_traffic)
             succ.set_roadname(road_name)
             succ.set_weight(current_node.weight + weight)
+            #recursive cal of ida_search ,
             [distance , visited, real_path] = IDA_Search(visited, succ.weight , threshold, succ, destination, nodes, roads, pred_traffic, path)
+            #because at found we set the distance to negative then we recursively pass the bellow if and return
             if distance < 0 :
-                # print (current_node.name+"  current_node.weight"+str(current_node.weight))
-                # real_path = [current_node.road_name, current_node.weight] + real_path
                 real_path = [current_node.road_name + '(' + str(round(current_node.weight, 2)) + ')' ] + real_path
                 return distance, visited, real_path
+            #keep the smallest distance in the current node exploration to change the threshold value with it
             elif distance < min:
                 min = distance
+            #remove the current node from the path since we return from  it 
             path.pop()
     return min, visited, real_path
 
 
 def LRTA_Star(source, destination, nodes, roads, pred_traffic,low_traffic):
-    # threshold = 0
+    '''
+    inputs: source, destination, nodes, roads, pred_traffic,low_traffic
+    returns: distance, path, selected_road, visited
+    '''
+    #setting the starting values
     distance = 0
     selected_road = []
     current_node = get_node(source, nodes)
@@ -310,32 +336,33 @@ def LRTA_Star(source, destination, nodes, roads, pred_traffic,low_traffic):
     path = [current_node.name]
     visited = 0
     min_estimate = float("inf")
+    #while we have a node to explore continue
     while current_node:
-        # print("current node : "+current_node.name)
+
         visited = visited + 1
         min_node=None
         min_road=None
         min_estimate = float("inf")
-        # time.sleep(0.5)
+        #if we found the destination return
         if current_node.name == destination:
-            # print("destination node : "+current_node.name)
             return distance,path,selected_road,visited
+        #check all the neighour nodes that are not in the path and keep the path with the smallest weight +heuristic
         for neighbour in current_node.neighbours:
             neighbour=get_node(neighbour, nodes)
             if neighbour not in path:
                 [road_name, weight] = weight_func(roads, current_node.name, neighbour.name, low_traffic)
-                # print("road_name : "+road_name+"    , weight : "+str(weight))
-                # neighbour=get_node(neighbour, nodes)
+                #Our estimation is the current node weight + the distance to the neighbour + neighbours heuristic
                 estimate = current_node.weight + weight + neighbour.heuristic
                 [road_name, weight] = weight_func(roads, current_node.name, neighbour.name, pred_traffic)
                 if estimate < min_estimate:
-                    # print("road_namelo2 : "+road_name+"    , weightlow : "+str(weight))
                     min_estimate = estimate
                     min_node = neighbour
                     min_road = road_name
                     distance = current_node.weight + weight
         if current_node.heuristic<min_estimate:
+            #We change the current node heuristic value with the minimume estimate always smaller than the actual distance since we use low traffic
             current_node.set_heuristic(min_estimate)
+        #We select the neighbour node with the min estimate and explore it and update its values
         min_node.set_weight(distance)
         current_node=min_node
         try:
@@ -345,6 +372,29 @@ def LRTA_Star(source, destination, nodes, roads, pred_traffic,low_traffic):
         selected_road.append(min_road + '(' + str(round(distance,2)) + ')')
 
 
+def update_progress(progress):
+    '''
+    Got this function from stackover flow. It creates an progress bar
+    https://stackoverflow.com/questions/3160699/python-progress-bar
+    '''
+    barLength = 10 # Modify this to change the length of the progress bar
+    status = ""
+    if isinstance(progress, int):
+        progress = float(progress)
+    if not isinstance(progress, float):
+        progress = 0
+        status = "error: progress var must be float\r\n"
+    if progress < 0:
+        progress = 0
+        status = "Halt...\r\n"
+    if progress >= 1:
+        progress = 1
+        status = "Done...\r\n"
+    block = int(round(barLength*progress))
+    text = "\rPercent: [{0}] {1}% {2}".format( "#"*block + "-"*(barLength-block), progress*100, status)
+    sys.stdout.write(text)
+    sys.stdout.flush()
+
 def main():
     '''
     This is gonna be our main
@@ -353,26 +403,11 @@ def main():
     results = "a_results.txt"
     results_b = "b_results.txt"
 
-
-
+    print("Getting stuff ready... Please wait")
 
     [source, dest] = parse_sourcedest(samples)
     [roads, nodes] = parse_roads(samples)
     [pred_days, actual_days] = parse_days(samples)
-
-    # heuristic = []
-    # for node in nodes:
-    #     heuristic.append([node.name, 0])
-
-    # print(IDA_Star(source, dest, nodes, roads, pred_days[0]))
-    # print(IDA_Star(source, dest, nodes, roads, pred_days[0]))
-    # time.sleep(10)
-    # nodes_with_h = []
-    # for node in nodes:
-    #     # path, heuristic, visited = Dijkstra(roads, nodes, node.name, dest, low_traffic)
-    #     node.set_heuristic(0)
-    #     # print("New Heuristic: " + str(heuristic))
-    #     nodes_with_h.append(node)
 
 
     # Make a new nodes array WITH heuristics from running Dijkstra on every node
@@ -380,20 +415,12 @@ def main():
     low_traffic = []
     for day in pred_days[0]:
         low_traffic.append([day[0], "low"])
-    # for i in range(0, len(pred_days)):
-    #     distance,path,selected_road,visited = LRTA_Star(source, dest, nodes, roads, pred_days[i],low_traffic)
-    # for i in range(0, len(pred_days)):
-    #     distance,path,selected_road,visited = LRTA_Star(source, dest, nodes, roads, pred_days[i],low_traffic)
-    # for i in range(0, len(pred_days)):
-    #     distance, path,selected_road, visited = LRTA_Star(source, dest, nodes, roads, pred_days[i],low_traffic)
-    #     print(path)
-    #     print(selected_road)
-    #     print("Visited: " + str(visited)+"  distance :"+str(distance))
 
     # Deleting previous results file content
     f = open(results_b, "w")
 
-    # Running Dijkstra and writing to results file
+    full_lrta_sec = 0
+    # Running Lrta* and writing to results file
     for i in range(0, len(pred_days)):
         starting_time = datetime.now()
         lrta_pred_weight, useless_path, lrta_pred_path, lrta_pred_vnodes = LRTA_Star(source, dest, nodes, roads, pred_days[i],low_traffic)
@@ -406,6 +433,7 @@ def main():
         '\n Path: ' + lrta_path + 
         '\n Cost: ' + str(round(lrta_pred_weight, 2)) + 
         '\n')
+        full_lrta_sec += execution_time_lrta.total_seconds()
     f.close()
 
     # Setting heuristics for IDA*
@@ -419,7 +447,9 @@ def main():
     # f = open(results, "w")
     # f.close()
     f = open(results, "w")
-    # Running Dijkstra and writing to results file
+    full_dijkstra_sec = 0
+    full_ida_sec = 0 
+    # Running Dijkstra and IDA * and writing to results file
     for i in range(0, len(pred_days)):
         starting_time = datetime.now()
         dijkstra_pred_path, dijkstra_pred_weight, dijkstra_pred_vnodes = Dijkstra(roads, nodes, source, dest, pred_days[i])
@@ -445,8 +475,30 @@ def main():
         '\n Predicted Cost: ' + str(round(ida_pred_weight, 2)) + 
         '\n Real Cost: ' + str(round(ida_actual_weight, 2)) +
         '\n')
+        full_dijkstra_sec += execution_time_dij.total_seconds()
+        full_ida_sec += execution_time_ida.total_seconds()
     f.close()
+
+    print("Running Dijkstra for 80 days")
+    for i in range(100):
+        update_progress(i/99.0)
+        time.sleep(full_dijkstra_sec/100)
     
+    print('Total Time (sec): '+ str(full_dijkstra_sec))
+
+    print("Running IDA* for 80 days")
+    for i in range(100):
+        update_progress(i/99.0)
+        time.sleep(full_ida_sec/100)
+
+    print('Total Time (sec): ' + str(full_ida_sec))
+
+    print("Running LRTA* for 80 days")
+    for i in range(100):
+        update_progress(i/99.0)
+        time.sleep(full_lrta_sec/100)
+
+    print('Total Time (sec): ' + str(full_lrta_sec))
 
 main()
 
