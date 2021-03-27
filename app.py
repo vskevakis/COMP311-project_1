@@ -497,7 +497,7 @@ def main():
     f.close()
 
 
-    print("Running Dijkstra simulation for 80 days")
+    print("\nRunning Dijkstra simulation for 80 days")
     for i in range(100):
         update_progress(i/99.0)
         time.sleep(full_dijkstra_sec/100)
@@ -506,7 +506,7 @@ def main():
     print("Dijkstra distance average: " + str(full_dijkstra_distance/80))
     print("Dijkstra visited average: " + str(full_dijkstra_visited/80))
 
-    print("Running IDA* simulation for 80 days")
+    print("\nRunning IDA* simulation for 80 days")
     for i in range(100):
         update_progress(i/99.0)
         time.sleep(full_ida_sec/100)
@@ -516,7 +516,7 @@ def main():
     print("IDA* visited average: " + str(full_ida_visited/80))
 
 
-    print("Running LRTA* simulation for 80 days")
+    print("\nRunning LRTA* simulation for 80 days")
     for i in range(100):
         update_progress(i/99.0)
         time.sleep(full_lrta_sec/100)
@@ -525,6 +525,7 @@ def main():
     print("LRTA* distance average: " + str(full_lrta_distance/80))
     print("LRTA* visited average: " + str(full_lrta_visited/80))
 
+    print("\nResults saved on \"" + results + "\" and \"" + results_b + "\"")
 
 
 main()

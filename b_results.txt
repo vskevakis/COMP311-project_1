@@ -1,480 +1,480 @@
 Day 1
 LRTA*: 
  Visited Nodes number: 46
- Execution Time(ms): 10495
+ Execution Time(ms): 10091
  Path: Road24e(11) -> Road22e(19.4) -> Road151e(29.4) -> Road76e(55.4) -> Road87e(72.5) -> Road84e(81.5) -> Road85e(106.5) -> Road80e(117.5) -> Road65e(125.5) -> Road71e(138.5) -> Road91e(173.5) -> Road82e(209.5) -> Road163e(239.5) -> Road111e(257.5) -> Road99e(273.7) -> Road94e(280.0) -> Road94e(286.3) -> Road165e(301.3) -> Road135e(314.8) -> Road125e(328.8) -> Road121e(337.8) -> Road138e(353.4) -> Road143e(379.4) -> Road146e(390.2) -> Road131e(433.2) -> Road164e(464.4) -> Road72e(484.8) -> Road93e(515.4) -> Road70e(559.4) -> Road64e(610.7) -> Road151e(620.7) -> Road43e(635.1) -> Road6e(650.1) -> Road1e(659.1) -> Road33e(685.5) -> Road26e(703.5) -> Road28e(714.5) -> Road17e(773.5) -> Road13e(798.5) -> Road153e(839.5) -> Road159e(893.5) -> Road48e(898.9) -> Road62e(912.9) -> Road58e(954.9) -> Road161e(984.9)
  Cost: 984.9
 Day 2
 LRTA*: 
  Visited Nodes number: 17
- Execution Time(ms): 4608
+ Execution Time(ms): 3480
  Path: Road11e(52.2) -> Road11e(104.4) -> Road152e(138.4) -> Road89e(201.4) -> Road84e(210.4) -> Road85e(232.9) -> Road80e(246.1) -> Road80e(259.3) -> Road90e(307.3) -> Road82e(337.3) -> Road163e(367.3) -> Road104e(433.0) -> Road165e(448.0) -> Road135e(466.0) -> Road125e(480.0) -> Road114e(539.4)
  Cost: 539.4
 Day 3
 LRTA*: 
  Visited Nodes number: 23
- Execution Time(ms): 6316
+ Execution Time(ms): 4667
  Path: Road152e(34) -> Road89e(109.6) -> Road88e(182.8) -> Road88e(256.0) -> Road84e(265.0) -> Road85e(295.0) -> Road90e(343.0) -> Road92e(397.0) -> Road83e(463.0) -> Road74e(517.0) -> Road151e(527.0) -> Road43e(539.0) -> Road6e(554.0) -> Road1e(562.1) -> Road33e(584.1) -> Road26e(602.1) -> Road28e(612.0) -> Road154e(675.0) -> Road166e(694.0) -> Road138e(707.0) -> Road143e(730.4) -> Road116e(753.4)
  Cost: 753.4
 Day 4
 LRTA*: 
  Visited Nodes number: 18
- Execution Time(ms): 4148
+ Execution Time(ms): 3541
  Path: Road12e(50.4) -> Road12e(100.8) -> Road19e(125.8) -> Road13e(148.3) -> Road153e(197.5) -> Road106e(236.2) -> Road108e(270.4) -> Road111e(288.4) -> Road159e(342.4) -> Road45e(357.7) -> Road45e(373.0) -> Road158e(404.5) -> Road84e(415.3) -> Road68e(449.3) -> Road164e(480.5) -> Road131e(523.5) -> Road118e(586.5)
  Cost: 586.5
 Day 5
 LRTA*: 
  Visited Nodes number: 13
- Execution Time(ms): 2446
+ Execution Time(ms): 2119
  Path: Road152e(34) -> Road92e(79) -> Road91e(121.0) -> Road91e(163.0) -> Road90e(211.0) -> Road80e(224.2) -> Road80e(237.4) -> Road85e(262.4) -> Road157e(347.6) -> Road62e(360.2) -> Road58e(402.2) -> Road161e(429.2)
  Cost: 429.2
 Day 6
 LRTA*: 
  Visited Nodes number: 7
- Execution Time(ms): 1273
+ Execution Time(ms): 1416
  Path: Road152e(30.6) -> Road93e(64.6) -> Road70e(108.6) -> Road164e(134.6) -> Road131e(177.6) -> Road118e(253.2)
  Cost: 253.2
 Day 7
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1148
+ Execution Time(ms): 1099
  Path: Road24e(11) -> Road156e(45.2) -> Road121e(54.2) -> Road114e(113.6)
  Cost: 113.6
 Day 8
 LRTA*: 
  Visited Nodes number: 6
- Execution Time(ms): 1216
+ Execution Time(ms): 1176
  Path: Road152e(40.8) -> Road72e(56.1) -> Road164e(87.3) -> Road131e(126.0) -> Road118e(201.6)
  Cost: 201.6
 Day 9
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1484
+ Execution Time(ms): 1093
  Path: Road24e(11) -> Road156e(56.6) -> Road121e(65.6) -> Road114e(144.8)
  Cost: 144.8
 Day 10
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1181
+ Execution Time(ms): 1188
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(124)
  Cost: 124
 Day 11
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1190
+ Execution Time(ms): 1649
  Path: Road24e(13.2) -> Road156e(51.2) -> Road121e(60.2) -> Road114e(139.4)
  Cost: 139.4
 Day 12
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1183
+ Execution Time(ms): 1109
  Path: Road24e(13.2) -> Road156e(58.8) -> Road121e(67.8) -> Road114e(133.8)
  Cost: 133.8
 Day 13
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1335
+ Execution Time(ms): 1202
  Path: Road24e(13.2) -> Road156e(47.4) -> Road121e(56.4) -> Road114e(122.4)
  Cost: 122.4
 Day 14
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1276
+ Execution Time(ms): 1100
  Path: Road24e(11) -> Road156e(45.2) -> Road121e(54.2) -> Road114e(113.6)
  Cost: 113.6
 Day 15
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1203
+ Execution Time(ms): 1098
  Path: Road24e(11) -> Road156e(45.2) -> Road121e(56.0) -> Road114e(135.2)
  Cost: 135.2
 Day 16
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1247
+ Execution Time(ms): 1115
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(117.4)
  Cost: 117.4
 Day 17
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1485
+ Execution Time(ms): 1094
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(117.4)
  Cost: 117.4
 Day 18
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1146
+ Execution Time(ms): 1187
  Path: Road24e(11) -> Road156e(49) -> Road121e(59.8) -> Road114e(125.8)
  Cost: 125.8
 Day 19
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1372
+ Execution Time(ms): 1099
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(117.4)
  Cost: 117.4
 Day 20
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1500
+ Execution Time(ms): 1264
  Path: Road24e(9.9) -> Road156e(44.1) -> Road121e(52.2) -> Road114e(111.6)
  Cost: 111.6
 Day 21
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1189
+ Execution Time(ms): 1094
  Path: Road24e(11) -> Road156e(56.6) -> Road121e(65.6) -> Road114e(131.6)
  Cost: 131.6
 Day 22
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1207
+ Execution Time(ms): 1096
  Path: Road24e(11) -> Road156e(45.2) -> Road121e(54.2) -> Road114e(113.6)
  Cost: 113.6
 Day 23
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1209
+ Execution Time(ms): 1182
  Path: Road24e(11) -> Road156e(56.6) -> Road121e(65.6) -> Road114e(125.0)
  Cost: 125.0
 Day 24
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1160
+ Execution Time(ms): 1098
  Path: Road24e(11) -> Road156e(45.2) -> Road121e(56.0) -> Road114e(135.2)
  Cost: 135.2
 Day 25
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1463
+ Execution Time(ms): 1096
  Path: Road24e(11) -> Road156e(45.2) -> Road121e(54.2) -> Road114e(120.2)
  Cost: 120.2
 Day 26
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1568
+ Execution Time(ms): 1099
  Path: Road24e(11) -> Road156e(45.2) -> Road121e(54.2) -> Road114e(120.2)
  Cost: 120.2
 Day 27
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1453
+ Execution Time(ms): 1167
  Path: Road24e(9.9) -> Road156e(55.5) -> Road121e(64.5) -> Road114e(123.9)
  Cost: 123.9
 Day 28
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1420
+ Execution Time(ms): 1168
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(124)
  Cost: 124
 Day 29
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1419
+ Execution Time(ms): 1119
  Path: Road24e(11) -> Road156e(45.2) -> Road121e(56.0) -> Road114e(122.0)
  Cost: 122.0
 Day 30
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1122
+ Execution Time(ms): 1178
  Path: Road24e(11) -> Road156e(49) -> Road121e(59.8) -> Road114e(139.0)
  Cost: 139.0
 Day 31
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1205
+ Execution Time(ms): 1097
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(117.4)
  Cost: 117.4
 Day 32
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1122
+ Execution Time(ms): 1098
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(137.2)
  Cost: 137.2
 Day 33
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1105
+ Execution Time(ms): 1159
  Path: Road24e(11) -> Road156e(56.6) -> Road121e(65.6) -> Road114e(131.6)
  Cost: 131.6
 Day 34
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1100
+ Execution Time(ms): 1130
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(137.2)
  Cost: 137.2
 Day 35
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1151
+ Execution Time(ms): 1096
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(137.2)
  Cost: 137.2
 Day 36
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1108
+ Execution Time(ms): 1096
  Path: Road24e(11) -> Road156e(56.6) -> Road121e(65.6) -> Road114e(144.8)
  Cost: 144.8
 Day 37
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1104
+ Execution Time(ms): 1107
  Path: Road24e(11) -> Road156e(45.2) -> Road121e(53.3) -> Road114e(132.5)
  Cost: 132.5
 Day 38
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1196
+ Execution Time(ms): 1267
  Path: Road24e(9.9) -> Road156e(44.1) -> Road121e(53.1) -> Road114e(119.1)
  Cost: 119.1
 Day 39
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1128
+ Execution Time(ms): 1095
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(124)
  Cost: 124
 Day 40
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1137
+ Execution Time(ms): 1100
  Path: Road24e(11) -> Road156e(56.6) -> Road121e(65.6) -> Road114e(131.6)
  Cost: 131.6
 Day 41
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1129
+ Execution Time(ms): 1134
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(137.2)
  Cost: 137.2
 Day 42
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1210
+ Execution Time(ms): 1098
  Path: Road24e(13.2) -> Road156e(58.8) -> Road121e(67.8) -> Road114e(127.2)
  Cost: 127.2
 Day 43
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1140
+ Execution Time(ms): 1093
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(117.4)
  Cost: 117.4
 Day 44
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1154
+ Execution Time(ms): 1254
  Path: Road24e(11) -> Road156e(56.6) -> Road121e(65.6) -> Road114e(125.0)
  Cost: 125.0
 Day 45
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1134
+ Execution Time(ms): 1100
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(124)
  Cost: 124
 Day 46
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1184
+ Execution Time(ms): 1099
  Path: Road24e(11) -> Road156e(45.2) -> Road121e(53.3) -> Road114e(132.5)
  Cost: 132.5
 Day 47
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1139
+ Execution Time(ms): 1137
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(117.4)
  Cost: 117.4
 Day 48
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1663
+ Execution Time(ms): 1218
  Path: Road24e(9.9) -> Road156e(47.9) -> Road121e(56.0) -> Road114e(122.0)
  Cost: 122.0
 Day 49
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1383
+ Execution Time(ms): 1098
  Path: Road24e(11) -> Road156e(56.6) -> Road121e(65.6) -> Road114e(131.6)
  Cost: 131.6
 Day 50
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1165
+ Execution Time(ms): 1092
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(117.4)
  Cost: 117.4
 Day 51
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1356
+ Execution Time(ms): 1178
  Path: Road24e(11) -> Road156e(56.6) -> Road121e(65.6) -> Road114e(125.0)
  Cost: 125.0
 Day 52
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1142
+ Execution Time(ms): 1096
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(117.4)
  Cost: 117.4
 Day 53
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1105
+ Execution Time(ms): 1095
  Path: Road24e(11) -> Road156e(49) -> Road121e(57.1) -> Road114e(123.1)
  Cost: 123.1
 Day 54
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1494
+ Execution Time(ms): 1098
  Path: Road24e(9.9) -> Road156e(44.1) -> Road121e(52.2) -> Road114e(131.4)
  Cost: 131.4
 Day 55
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1174
+ Execution Time(ms): 1172
  Path: Road24e(9.9) -> Road156e(44.1) -> Road121e(54.9) -> Road114e(120.9)
  Cost: 120.9
 Day 56
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1148
+ Execution Time(ms): 1098
  Path: Road24e(11) -> Road156e(45.2) -> Road121e(54.2) -> Road114e(113.6)
  Cost: 113.6
 Day 57
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1154
+ Execution Time(ms): 1092
  Path: Road24e(11) -> Road156e(56.6) -> Road121e(65.6) -> Road114e(131.6)
  Cost: 131.6
 Day 58
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1117
+ Execution Time(ms): 1158
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(117.4)
  Cost: 117.4
 Day 59
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1105
+ Execution Time(ms): 1097
  Path: Road24e(11) -> Road156e(45.2) -> Road121e(54.2) -> Road114e(120.2)
  Cost: 120.2
 Day 60
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1123
+ Execution Time(ms): 1096
  Path: Road24e(11) -> Road156e(45.2) -> Road121e(54.2) -> Road114e(133.4)
  Cost: 133.4
 Day 61
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1449
+ Execution Time(ms): 1093
  Path: Road24e(11) -> Road156e(45.2) -> Road121e(54.2) -> Road114e(120.2)
  Cost: 120.2
 Day 62
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1117
+ Execution Time(ms): 1228
  Path: Road24e(11) -> Road156e(56.6) -> Road121e(65.6) -> Road114e(125.0)
  Cost: 125.0
 Day 63
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1102
+ Execution Time(ms): 1096
  Path: Road24e(13.2) -> Road156e(51.2) -> Road121e(59.3) -> Road114e(138.5)
  Cost: 138.5
 Day 64
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1116
+ Execution Time(ms): 1093
  Path: Road24e(9.9) -> Road156e(47.9) -> Road121e(56.9) -> Road114e(136.1)
  Cost: 136.1
 Day 65
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1372
+ Execution Time(ms): 1162
  Path: Road24e(11) -> Road156e(49) -> Road121e(59.8) -> Road114e(125.8)
  Cost: 125.8
 Day 66
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1216
+ Execution Time(ms): 1100
  Path: Road24e(11) -> Road156e(45.2) -> Road121e(54.2) -> Road114e(120.2)
  Cost: 120.2
 Day 67
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1288
+ Execution Time(ms): 1098
  Path: Road24e(9.9) -> Road156e(44.1) -> Road121e(53.1) -> Road114e(112.5)
  Cost: 112.5
 Day 68
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1203
+ Execution Time(ms): 1093
  Path: Road24e(13.2) -> Road156e(58.8) -> Road121e(67.8) -> Road114e(147.0)
  Cost: 147.0
 Day 69
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1113
+ Execution Time(ms): 1228
  Path: Road24e(11) -> Road156e(56.6) -> Road121e(65.6) -> Road114e(131.6)
  Cost: 131.6
 Day 70
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1140
+ Execution Time(ms): 1098
  Path: Road24e(11) -> Road156e(56.6) -> Road121e(65.6) -> Road114e(131.6)
  Cost: 131.6
 Day 71
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1127
+ Execution Time(ms): 1095
  Path: Road24e(13.2) -> Road156e(58.8) -> Road121e(67.8) -> Road114e(133.8)
  Cost: 133.8
 Day 72
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1159
+ Execution Time(ms): 1160
  Path: Road24e(13.2) -> Road156e(51.2) -> Road121e(60.2) -> Road114e(119.6)
  Cost: 119.6
 Day 73
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1491
+ Execution Time(ms): 1098
  Path: Road24e(11) -> Road156e(49) -> Road121e(59.8) -> Road114e(125.8)
  Cost: 125.8
 Day 74
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1440
+ Execution Time(ms): 1096
  Path: Road24e(11) -> Road156e(56.6) -> Road121e(64.7) -> Road114e(143.9)
  Cost: 143.9
 Day 75
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1153
+ Execution Time(ms): 1152
  Path: Road24e(13.2) -> Road156e(47.4) -> Road121e(56.4) -> Road114e(115.8)
  Cost: 115.8
 Day 76
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1124
+ Execution Time(ms): 1250
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(124)
  Cost: 124
 Day 77
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1146
+ Execution Time(ms): 1104
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(117.4)
  Cost: 117.4
 Day 78
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1154
+ Execution Time(ms): 1094
  Path: Road24e(11) -> Road156e(49) -> Road121e(58) -> Road114e(117.4)
  Cost: 117.4
 Day 79
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1130
+ Execution Time(ms): 1129
  Path: Road24e(11) -> Road156e(56.6) -> Road121e(65.6) -> Road114e(131.6)
  Cost: 131.6
 Day 80
 LRTA*: 
  Visited Nodes number: 5
- Execution Time(ms): 1171
+ Execution Time(ms): 1092
  Path: Road24e(13.2) -> Road156e(47.4) -> Road121e(56.4) -> Road114e(135.6)
  Cost: 135.6
