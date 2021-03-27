@@ -1,6 +1,6 @@
 # Artificial Intelligence Course
 ## Project 1 - Path finding algorithms
-***This repo is part of our project for the COMP311 course on ECE dept. of the Technical Univerity of Crete***
+***This repo is part of our project for the COMP311 course on ECE dept. of the Technical Univerity of Crete. We implemented three different path finding algorithms that find a solution to a graph problem***
 ## Run
 You need to have python3 installed on your computer.
 ```bash
